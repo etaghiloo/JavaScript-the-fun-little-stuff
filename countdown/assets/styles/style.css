@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Mukta Mahee Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mukta Mahee Regular"),
+        url("../fonts/mukta/MuktaMahee-Regular.woff") format("woff");
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: "Mukta Mahee Regular";
+    color: #fff;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h2, h3, h4, h5 {
+    margin: 0;
+}
+.countdown-title {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/image.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.countdown-title::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.countdown-title-wrapper {
+    display: flex;
+    align-items: end;
+    gap: 50px;
+    margin-left: 190px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+.countdown-title ul {
+    border: 3px solid #fff;
+    padding: 0 10px 35px 10px;
+}
+.countdown-title ul li {
+    width: 150px;
+    text-align: center;
+}
+.countdown-title ul li h2 {
+    font-size: 110px;
+}
+.countdown-title ul li h2.sub-text {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: -40px;
+}
+.countdown-title .title {
+    margin-bottom: 15px;
+}
+.countdown-title .title .english {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+.countdown-title .title h3 {
+    font-size: 55px;
+}
+.countdown-title .title h4 {
+    font-size: 30px;
+}
+.countdown-title .title .japanese-director {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.countdown-title .title .japanese-director h5 {
+    font-size: 20px;
+    font-weight: lighter;
+    letter-spacing: 4px;
+}
+
+@keyframes firework {
+    0% { 
+        transform: translate(-50%, 40vh);
+        width: 0.5vmin;
+        opacity: 1;
+    }
+    50% { 
+        width: 0.5vmin;
+        opacity: 1;
+    }
+    100% { 
+        width: 90vmin; 
+        opacity: 0; 
+    }
+}
+.firework,
+.firework::before,
+.firework::after {
+    display: none;
+    z-index: 2;
+    --top: 60vh;
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    width: 90vmin;
+    aspect-ratio: 1;
+    background:
+        radial-gradient(circle, #ff0 20vmin, #0000 0) 50% 00%,
+        radial-gradient(circle, rgb(255, 162, 0) 30vmin, #0000 0) 00% 50%,
+        radial-gradient(circle, rgb(0, 38, 255) 20vmin, #0000 0) 16% 40%,
+        radial-gradient(circle, #ff0 50vmin, #0000 0) 50% 99%,
+        radial-gradient(circle, rgb(255, 55, 0) 20vmin, #0000 0) 99% 50%,
+        radial-gradient(circle, rgb(0, 195, 255) 30vmin, #0000 0) 80% 90%,
+        radial-gradient(circle, #ff0 50vmin, #0000 0) 95% 90%,
+        radial-gradient(circle, #ff0 50vmin, #0000 0) 10% 60%,
+        radial-gradient(circle, rgb(0, 38, 255) 20vmin, #0000 0) 31% 80%,
+        radial-gradient(circle, #ff0 30vmin, #0000 0) 80% 10%,
+        radial-gradient(circle, rgb(255, 162, 0) 20vmin, #0000 0) 90% 23%,
+        radial-gradient(circle, rgb(0, 255, 153) 30vmin, #0000 0) 45% 20%,
+        radial-gradient(circle, rgb(255, 55, 0) 50vmin, #0000 0) 13% 24%
+        ;
+    background-size: 12px 12px;
+    background-repeat: no-repeat;
+    animation: firework 3s infinite;
+}
+.firework::before {
+    transform: translate(-50%, -50%) rotate(25deg) !important; 
+}
+.firework::after {
+    transform: translate(-50%, -50%) rotate(-37deg) !important;
+}

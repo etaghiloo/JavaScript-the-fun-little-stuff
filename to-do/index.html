@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/styles/style.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/fontawesome.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/brands.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/solid.css" />
+        <link rel="stylesheet" href="assets/styles/fontawesome/regular.css" />
+        <script src="./assets/scripts/uuidv4.js"></script>
+        <script src="./assets/scripts/index.js"></script>
+        <title>ToDo</title>
+    </head>
+    <body>
+        <div class="to-do">
+            <div class="container">
+                <div class="header">
+                    <div class="add">
+                        <input id="to-do-input" type="text" placeholder="add a new task" />
+                        <i id="add-button" class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="filter">
+                        <input id="filter-to-do-input" type="text" placeholder="search for your tasks" />
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="hide-completed">
+                        <label>
+                            <input id="hideCompleted" type="checkbox" autocomplete="off" />
+                            <h4>Show only undone tasks</h4>
+                        </label>
+                    </div>
+                </div>
+                <ul id="to-do-list"></ul>
+                <h4 class="guide">GUIDE | click to check & double-click to remove</h4>
+            </div>
+        </div>
+    </body>
+</html>

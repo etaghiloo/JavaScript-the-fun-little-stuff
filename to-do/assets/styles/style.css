@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Mukta Mahee Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mukta Mahee Regular"),
+        url("../fonts/mukta/MuktaMahee-Regular.woff") format("woff");
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: "Mukta Mahee Regular";
+    user-select: none;
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h2, h4 {
+    margin: 0;
+}
+h4 {
+    font-weight: lighter;
+    color: rgba(0, 0, 0, 0.6);
+}
+h4.guide {
+    margin-top: 20px;
+}
+.container {
+    width: 450px;
+    margin: 0 auto;
+}
+.to-do {
+    margin: 70px;
+}
+.to-do .header {
+    background-color: #68d79f;
+    padding: 40px 40px 20px 40px;
+    border: 1px solid #000;
+    border-bottom: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.to-do .header .add {
+    margin-bottom: 10px;
+}
+.to-do .header .add,
+.to-do .header .filter {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.to-do .header .add input,
+.to-do .header .filter input {
+    width: 380px;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.to-do .header .add i,
+.to-do .header .filter i {
+    font-size: 20px;
+}
+.to-do .header .hide-completed {
+    margin-top: 20px;
+}
+.to-do .header .hide-completed label {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.to-do .header .hide-completed input {
+    margin: 0;
+}
+.to-do ul#to-do-list {
+    background-color: rgb(249, 243, 212);
+    padding: 40px;
+    border: 1px solid #000;
+    border-top: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.to-do ul#to-do-list li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(219, 214, 189);
+}
+.to-do ul#to-do-list li span {
+    width: 15px;
+    height: 3px;
+    background-color: #000;
+}
+.to-do ul#to-do-list li:hover {
+    cursor: pointer;
+}
+.to-do ul#to-do-list li.completed {
+    color: #57c28c;
+}
+.to-do ul#to-do-list li.completed span {
+    transform: rotate(-45deg);
+    background-color: #57c28c;
+}

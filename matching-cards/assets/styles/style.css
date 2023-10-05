@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Mukta Mahee Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mukta Mahee Regular"),
+        url("../fonts/mukta/MuktaMahee-Regular.woff") format("woff");
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: "Mukta Mahee Regular";
+}
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.container {
+    width: 540px;
+    margin: 0 auto;
+}
+.matching-cards-game .haeder-box {
+    margin: 60px 0 40px 0;
+    padding: 10px 0;
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #314d77;
+    border-radius: 10px;
+    text-align: center;
+}
+.matching-cards-game .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    /* perspective: 1000px; */
+}
+.matching-cards-game .grid .card {
+    position: relative;
+    width: 120px;
+    height: 180px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s;
+    /* transform: scale(1); */
+}
+.matching-cards-game .grid .card img {
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.matching-cards-game .grid .card.flip {
+    transform: rotateY(180deg);
+}
+.matching-cards-game .grid .card .front,
+.matching-cards-game .grid .card .back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.matching-cards-game .grid .card .front {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/styles/style.css" />
+        <title>BMI Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1>BMI Calculator</h1>
+            </div>
+            <div class="wrapper">
+                <div class="left">
+                    <div class="height">
+                        <input class="box" type="text" placeholder="height" id="height"/>
+                        <h4>cm</h4>
+                    </div>
+                    <div class="weight">
+                        <input class="box" type="text" placeholder="weight" id="weight"/>
+                        <h4>kg</h4>
+                    </div>
+                    <div class="result-wrapper">
+                        <button class="button calculate" onclick="calculateBMI()"><h3>calculate my BMI!</h3></button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="result" id="result"></div>
+                </div>
+            </div>
+            <div class="ranges">
+                <div class="range yellow">
+                    <p class="number">0</p>
+                    <div class="line yellow"></div>
+                    <p>Underweight</p>
+                </div>
+                <div class="range green">
+                    <p class="number">18.5</p>
+                    <div class="line green"></div>
+                    <p>Healthy Weight</p>
+                </div>
+                <div class="range orange">
+                    <p class="number">25</p>
+                    <div class="line orange"></div>
+                    <p>Overweight</p>
+                </div>
+                <div class="range red">
+                    <p class="number">30</p>
+                    <div class="line red"></div>
+                    <p>Obese</p>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/scripts/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+@font-face {
+    font-family: "Mukta Mahee Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mukta Mahee Regular"),
+        url("../fonts/mukta/MuktaMahee-Regular.woff") format("woff");
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: "Mukta Mahee Regular";
+}
+.container {
+    width: 500px;
+    margin: 70px auto;
+    border: 1px solid #000000;
+    padding: 30px 0;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 50px;
+}
+.title {
+    text-align: center;
+}
+.title h1 {
+    margin: 0 0 25px 0;
+}
+h4 {
+    margin: 0;
+}
+.left .height,
+.left .weight {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+.weight {
+    margin-bottom: 40px;
+}
+.box {
+    padding: 10px 15px;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    width: 190px;
+}
+.result-wrapper {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.button.calculate {
+    background: transparent;
+    padding: 0 23px;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.right .result {
+    background-color: transparent;
+    width: 168px;
+    height: 168px;
+    line-height: 168px;
+    border-radius: 15px;
+    font-size: 50px;
+    text-align: center;
+}
+.ranges {
+    margin-top: 40px;
+}
+.ranges p {
+    margin: 5px 0;
+    text-align: center;
+}
+.ranges p.number {
+    text-align: left;
+}
+.ranges {
+    display: flex;
+    justify-content: center;
+}
+.range .line {
+    height: 10px;
+    width: 110px;
+}
+.range.yellow .line.yellow {
+    background-color: #ffe355;
+}
+.range.green .line.green {
+    background-color: #5cf175;
+}
+.range.orange .line.orange {
+    background-color: #fd8f50;
+}
+.range.red .line.red {
+    background-color: #e94949;
+}

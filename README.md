@@ -3,4 +3,5 @@
 **to do** - a simple to do app <br>
 **matching cards game** - a Dr. Who theme game :) <br>
 **BMI calculator** - calculate your BMI with this simple app <br>
-**slider** - simple image slider with auto-play and manual navigation
+**slider** - simple image slider with auto-play and manual navigation <br>
+**dictionary** - english dictionary using the API provided by https://dictionaryapi.dev

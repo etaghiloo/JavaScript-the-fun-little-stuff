@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Mukta Mahee Regular";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mukta Mahee Regular"),
+        url("../fonts/mukta/MuktaMahee-Regular.woff") format("woff");
+}
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body {
+    margin: 0;
+    direction: ltr;
+    font-family: "Mukta Mahee Regular";
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 600px;
+    margin: 0 auto;
+}
+p {
+    font-size: 20px;
+}
+.dictionary .box {
+    background-color: rgb(249, 243, 212);
+    border: 1px solid #000000;
+    padding: 30px;
+    margin: 70px 0;
+    border-radius: 20px;
+}
+.dictionary .box h2 {
+    margin: 0;
+}
+.dictionary .box p.api {
+    font-size: 15px;
+    opacity: 0.5;
+    margin: 0;
+}
+.dictionary .box .input-wrapper,
+.dictionary .box .audio-phonetic-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.dictionary .box .input-wrapper {
+    padding: 40px 0;
+    border-bottom: 2px solid #000;
+}
+.dictionary .box input#input {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 35px;
+    padding: 10px 0;
+    color: #404fd7;
+    width: 100%;
+}
+.dictionary .box .audio-phonetic-wrapper {
+    padding: 40px 0 20px 0;
+}
+.dictionary .box .audio-phonetic-wrapper i.pronunciation-icon {
+    font-size: 25px;
+    color: #404fd7;
+    display: none;
+}
+.dictionary .box .audio-phonetic-wrapper i.pronunciation-icon:hover {
+    cursor: pointer;
+}
+.dictionary .box .audio-phonetic-wrapper p#phonetic {
+    margin: 0;
+    color: #404fd7;
+}
+.dictionary .box #meanings .part-of-speech-meanings {
+    padding-top: 25px;   
+}
+.dictionary .box #meanings .part-of-speech-meanings i.partOfSpeech {
+    font-size: 20px;
+    padding: 0 7px;
+    background-color: rgba(64, 79, 215, 0.7)
+}
+.dictionary .box #meanings .part-of-speech-meanings p.definition {
+    padding-left: 35px;
+}
+.dictionary .box #meanings .part-of-speech-meanings p.definition p.example {
+    margin: 0;
+    opacity: 0.5;
+}
